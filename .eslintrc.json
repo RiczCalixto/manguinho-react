@@ -12,7 +12,10 @@
   "env": {
     "cypress/globals": true
   },
-  "plugins": ["react", "cypress"],
+  "plugins": [
+    "react",
+    "cypress"
+  ],
   "parserOptions": {
     "project": "./tsconfig-eslint.json"
   },
@@ -26,6 +29,10 @@
     "no-redeclare": "off",
     "import/export": "off",
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "semi": "off",
+    "@typescript-eslint/semi": [
+      "off"
+    ]
   }
 }
