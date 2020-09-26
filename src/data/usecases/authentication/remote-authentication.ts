@@ -1,4 +1,4 @@
-import { HttpPostClient } from './models/http-post-client';
+import { HttpPostClient } from '@/data/models/http-post-client';
 
 export class RemoteAuthentication {
   constructor(
