@@ -1,0 +1,20 @@
+{
+  "name": "manguinho-react",
+  "version": "1.0.0",
+  "description": "Sistema em ReactJS utilizando Typescript, Hooks e seguindo boas práticas de programação: Design Patterns, Clean Architecture, SOLID, DRY, KISS, YAGNI e TDD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiczCalixto/manguinho-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RiczCalixto/manguinho-react/issues"
+  },
+  "homepage": "https://github.com/RiczCalixto/manguinho-react#readme"
+}
