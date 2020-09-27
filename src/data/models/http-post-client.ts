@@ -1,6 +1,6 @@
 export type HttPostParams = {
   url: string;
-  body?: any;
+  body?: object;
   header?: any;
 };
 
