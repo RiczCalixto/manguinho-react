@@ -1,10 +1,9 @@
 import { RemoteAuthentication } from '@/data/usecases/authentication/remote-authentication';
 import { HttpPostClientSpy } from '@/data/test/mock-http-client';
 import { MOCKAccountModel, MOCKAuthenticationFactory } from '@/domain/test/mock-account';
-import faker, { fake } from 'faker';
-import { InvalidCredentialsError } from '@/domain/errors/invalid-credentials-error';
-import { HttpStatusCode } from '@/data/models/http-response';
-import { UnexpectedError } from '@/domain/errors/unexpected.error.ts';
+import faker from 'faker';
+import { InvalidCredentialsError, UnexpectedError } from '@/domain/errors';
+import { HttpStatusCode } from '@/data/models';
 import { AuthenticationParams } from '@/domain/usecases/authentication';
 import { AccountModel } from '@/domain/models/account.model';
 

@@ -1,7 +1,5 @@
-import { HttpPostClient } from '@/data/models/http-post-client';
-import { HttpResponse, HttpStatusCode } from '@/data/models/http-response';
-import { InvalidCredentialsError } from '@/domain/errors/invalid-credentials-error';
-import { UnexpectedError } from '@/domain/errors/unexpected.error.ts';
+import { HttpPostClient, HttpStatusCode } from '@/data/models';
+import { InvalidCredentialsError, UnexpectedError } from '@/domain/errors';
 import { AccountModel } from '@/domain/models/account.model';
 import { Authentication, AuthenticationParams } from '@/domain/usecases/authentication';
 

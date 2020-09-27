@@ -1,5 +1,4 @@
-import { HttPostParams, HttpPostClient } from '@/data/models/http-post-client';
-import { HttpResponse, HttpStatusCode } from '../models/http-response';
+import { HttPostParams, HttpPostClient, HttpResponse, HttpStatusCode } from '@/data/models';
 
 export class HttpPostClientSpy<T, R> implements HttpPostClient<T, R> {
   url?: string;
