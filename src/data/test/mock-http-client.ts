@@ -1,4 +1,4 @@
-import { HttPostParams, HttpPostClient } from '../models/http-post-client';
+import { HttPostParams, HttpPostClient } from '@/data/models/http-post-client';
 
 export class HttpPostClientSpy implements HttpPostClient {
   url?: string;
