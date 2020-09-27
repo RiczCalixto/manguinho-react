@@ -1,4 +1,6 @@
 import { HttpPostClient } from '@/data/models/http-post-client';
+import { HttpStatusCode } from '@/data/models/http-response';
+import { InvalidCredentialsError } from '@/domain/errors/invalid-credentials-error';
 import { AuthenticationParams } from '@/domain/usecases/authentication';
 
 export class RemoteAuthentication {
@@ -8,6 +10,13 @@ export class RemoteAuthentication {
   ) {}
 
   async auth(params: AuthenticationParams): Promise<void> {
-    await this.httpPostClient.post({ url: this.url, body: params });
+    const httpResponse = await this.httpPostClient.post({
+      url: this.url,
+      body: params
+    });
+
+    if (httpResponse.statusCode === HttpStatusCode.unathorized) {
+      throw new InvalidCredentialsError();
+    }
   }
 }
